@@ -1,6 +1,6 @@
 //5.1.
-//1.
 /*
+//1.
 const max = 5;
 
 //2.
@@ -28,6 +28,8 @@ while (!isGuessed) {
     }
 }*/
 
+
+
 //5.2.
 /*
 // 1.
@@ -44,6 +46,8 @@ do {
 
 //4.
 console.log("Цикл завершен. Финальное значение счетчика:", counter);*/
+
+
 
 //5.3
 
@@ -68,35 +72,154 @@ for (let i = 1; i <= 10; i++) {
 //6.
 console.log(myWork);*/
 
+
+
 //5.4.
 /*//1.
 let myTable = [];
 
 //2.
-let rows = 5;  
-let columns = 4;  
+const numRows = 8; // Количество строк
+const numCols = 8; // Количество столбцов
 
 //3.
 let counter = 0;
 
 //4.
-for (let i = 0; i < rows; i++) {
+for (let i = 0; i < numRows; i++) {
 
-    let TempTable = [];
+    let timeTable = [];
 
 //5.
-    for (let j = 0; j < columns; j++) {
-        
+    for (let j = 0; j < numCols; j++) {
+//6.
         counter++;
 
-//6.
-        TempTable.push(counter);
+//7.
+        timeTable.push(counter);
     }
 
-//7.
-    myTable.push(TempTable);
-}
-
 //8.
+    myTable.push(timeTable);
+}
+//9.
 console.table(myTable);*/
 
+
+
+//5.5.
+/*
+//1.
+let grid = [];
+//2.
+const totalCells = 64;
+//3.
+let counter = 0;
+//4.
+let row = [];
+//5.
+for (let i = 0; i <= totalCells; i++) {
+//6.
+    if (i % 8 === 0) {
+//7.
+        if (row.length > 0) {
+            grid.push(row);
+//8.
+            row = [];
+        }
+    }
+//10. 
+    let temp = counter;
+    row.push(temp);
+//11-12.
+    if (i === totalCells) {
+        grid.push(row);
+    }
+//9.
+    counter++;
+}
+//13.
+console.log(grid);*/
+
+
+//5.6.
+/*
+//1.
+let Arrayx = [];
+//2.
+for (let i = 1; i <= 10; i++) {
+    Arrayx.push(i);
+}
+//3.
+console.log(Arrayx);
+//4.
+for (let i = 0; i < Arrayx.length; i++) {
+    console.log(Arrayx[i]);
+}
+//5.
+for (let i = 0; i < Arrayx.length; i++) {
+    console.log(Arrayx[i]);
+}*/
+
+
+
+//5.7.
+/*
+//1.
+let carObject = {
+    make: "Toyota",
+    model: "Celica",
+    year: "1998"
+};
+//2. 
+console.log("Свойства для объекта:");
+for (let key in carObject) {
+    console.log(key + ": " + carObject[key]);
+}
+//3.
+let carArray = [carObject.make, carObject.year, carObject.model];
+
+console.log("Значение массива:");
+for (let i = 0; i < carArray.length; i++) {
+    console.log(carArray[i]);
+}*/
+
+
+
+//5.8.1.
+/*
+//1.
+let output = "";
+//2.
+let skipNumber = 5;
+//3.
+for (let i = 1; i <= 10; i++) {
+//4.
+    if (i == skipNumber) {
+//5.
+        continue;
+    }
+//6.
+    output += i + " ";
+}
+//7.
+console.log("вывод с continue: " + output);
+
+
+//5.8.2.
+//1.
+let outputSecond = "";
+//2.
+let skipNumberSecond = 5;
+//3.
+for (let i = 1; i <= 10; i++) {
+//4.
+    if (i == skipNumberSecond) {
+//5.
+        break;
+    }
+//6.
+    outputSecond += i + " ";
+}
+//7.
+console.log("вывод с break: " + outputSecond);*/
