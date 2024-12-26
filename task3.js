@@ -69,3 +69,34 @@ for (let i = 1; i <= 10; i++) {
 console.log(myWork);*/
 
 //5.4.
+/*//1.
+let myTable = [];
+
+//2.
+let rows = 5;  
+let columns = 4;  
+
+//3.
+let counter = 0;
+
+//4.
+for (let i = 0; i < rows; i++) {
+
+    let TempTable = [];
+
+//5.
+    for (let j = 0; j < columns; j++) {
+        
+        counter++;
+
+//6.
+        TempTable.push(counter);
+    }
+
+//7.
+    myTable.push(TempTable);
+}
+
+//8.
+console.table(myTable);*/
+
